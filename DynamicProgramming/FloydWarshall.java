@@ -37,3 +37,17 @@ public class FloydWarshall {
         }
     }
 }
+/*output
+0 to 1 is -1
+0 to 2 is -2
+0 to 3 is 0
+1 to 0 is 4
+1 to 2 is 2
+1 to 3 is 4
+2 to 0 is 5
+2 to 1 is 1
+2 to 3 is 2
+3 to 0 is 3
+3 to 1 is -1
+3 to 2 is 1
+*/
