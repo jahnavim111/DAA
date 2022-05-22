@@ -24,21 +24,7 @@ class Graph{
     Edge edge[];
     Graph(int v,int e){
         V=v;
-        E=e;for(int j=0;j<E;j++){
-            int u=graph.edge[j].src;
-            int v=graph.edge[j].dest;
-            int w=graph.edge[j].weight;
-            if(dist[u]!=Integer.MAX_VALUE && dist[u]+w<dist[v]){
-                dist[v]=dist[u]+w;
-            }
-        }for(int j=0;j<E;j++){
-            int u=graph.edge[j].src;
-            int v=graph.edge[j].dest;
-            int w=graph.edge[j].weight;
-            if(dist[u]!=Integer.MAX_VALUE && dist[u]+w<dist[v]){
-                dist[v]=dist[u]+w;
-            }
-        }
+        E=e; 
         edge=new Edge[e];
         System.out.println("Enter src,dest,weight");
         Scanner sc=new Scanner(System.in);
